@@ -218,9 +218,9 @@ body {
 .mode:hover { transform: translateY(-3px); box-shadow: 0 10px 0 var(--card-edge); }
 .mode:active { transform: translateY(5px); box-shadow: 0 2px 0 var(--card-edge); }
 .mode:focus-visible, .btn:focus-visible, .round-btn:focus-visible, .name-input:focus-visible { outline: 4px solid var(--accent); outline-offset: 3px; }
-.mode .art { display: flex; justify-content: center; }
-.mode .art svg { width: 44%; max-width: 92px; height: auto; }
-.mode .art svg + svg { margin-left: -10%; transform: rotate(8deg) translateY(6px); }
+.mode .art { display: flex; justify-content: center; align-items: center; width: 100%; height: clamp(72px, 20vw, 96px); }
+.mode .art svg { height: 100%; width: auto; flex: none; }
+.mode .art svg + svg { margin-left: -12%; transform: rotate(8deg) translateY(4px); }
 .mode .art svg:first-child { transform: rotate(-6deg); }
 .mode strong { font-family: var(--display); font-weight: 800; font-size: 1.7rem; line-height: 1.1; }
 .mode em { font-style: normal; font-weight: 600; color: var(--ink-soft); font-size: .95rem; }
